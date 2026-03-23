@@ -50,22 +50,24 @@ jobs:
 
       - name: Build package
         run: |
-          runuser -u builder -- \
+          # Change directory to where the PKGBUILD is located before running makepkg
+          runuser -u builder -- bash -c "cd pacman && \
             makepkg \
               --noconfirm \
-              --skippgpcheck
+              --nodeps \
+              --skippgpcheck"
 
       - name: Locate built package
         id: locate
         run: |
-          PKGFILE=$(find "$GITHUB_WORKSPACE" \
+          PKGFILE=$(find "$GITHUB_WORKSPACE/pacman" \
             -maxdepth 1 \
             -name "*.pkg.tar.zst" \
             ! -name "*-debug-*" \
             | head -n 1)
 
           if [ -z "$PKGFILE" ]; then
-            echo "ERROR: No .pkg.tar.zst found" >&2
+            echo "ERROR: No .pkg.tar.zst found in pacman/" >&2
             exit 1
           fi
 
