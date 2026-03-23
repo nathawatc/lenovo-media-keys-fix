@@ -1,3 +1,5 @@
+# Maintainer: nathawat <nathawat@noreply.codeberg.org>
+
 pkgname=fix-thinkbook-media-keys
 pkgver=1.0
 pkgrel=1
