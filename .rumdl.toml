@@ -1,0 +1,7 @@
+[global]
+disable = ["MD033"]
+extend-enable = ["MD060", "MD063"]
+respect-gitignore = true
+
+[MD013]
+code-blocks = false
