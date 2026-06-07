@@ -1,0 +1,13 @@
+pkgbase = thinkbook-media-keys-fix
+	pkgdesc = Fixes missing release events in media keys on Lenovo ThinkBook
+	pkgver = 1
+	pkgrel = 1
+	url = https://codeberg.org/nathawat/thinkbook-media-keys-fix
+	install = thinkbook-media-keys-fix.install
+	arch = any
+	license = CC0-1.0
+	depends = systemd
+	source = 61-lenovo-media.hwdb::https://codeberg.org/nathawat/thinkbook-media-keys-fix/raw/commit/3e3f98ae116df30af55ff79e68e27036d75fcd1a/src/61-lenovo-media.hwdb
+	b2sums = ce629458dbb61c198fee7877cbdcc0efce803d6cd8815cf75762fba86bd37cbdbb34d092fc3141f52bd0371af4c56ff1d1eee9c82a51a88b31a135232d0b9bad
+
+pkgname = thinkbook-media-keys-fix
