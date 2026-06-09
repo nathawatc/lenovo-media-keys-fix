@@ -1,4 +1,4 @@
-# ThinkBook Media Keys Fix
+# Lenovo Media Keys Fix
 
 Fix Lenovo laptop media-key events on Linux with DMI-scoped `systemd-hwdb` rules.
 
