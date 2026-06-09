@@ -1,0 +1,13 @@
+pkgbase = 21mw-media-keys-fix
+	pkgdesc = Fix media key events on Lenovo ThinkBook 16 G7 ARP (21MW)
+	pkgver = 1
+	pkgrel = 1
+	url = https://codeberg.org/nathawat/thinkbook-media-keys-fix
+	install = 21mw-media-keys-fix.install
+	arch = any
+	license = CC0-1.0
+	depends = systemd
+	source = 61-21mw-media.hwdb::https://codeberg.org/nathawat/thinkbook-media-keys-fix/raw/commit/869ebdaae25cfbdac5e46fc8ab90ff26dbf392c2/src/61-21mw-media.hwdb
+	b2sums = 0d3667ab4e13a44a0bc871635faa0e693438d7eba9a64d93c09fe7353beb4c1af002ab682c16bae5517ecd42af875538aa7993b07310dd6381f203756ad23862
+
+pkgname = 21mw-media-keys-fix
