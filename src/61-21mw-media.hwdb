@@ -1,0 +1,7 @@
+evdev:atkbd:dmi:*svnLENOVO*:pn21MW:*
+ KEYBOARD_KEY_ae=!volumedown
+ KEYBOARD_KEY_b0=!volumeup
+ KEYBOARD_KEY_8c=reserved
+
+evdev:name:Ideapad extra buttons:dmi:*svnLENOVO*:pn21MW:*
+ KEYBOARD_KEY_13e=reserved
