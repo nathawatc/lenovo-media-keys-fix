@@ -40,8 +40,8 @@ evdev:atkbd:dmi:*svnLENOVO*:pn21MW:*
 
 ```bash
 for e in /dev/input/event*; do
-  printf '%s: ' "$e"
-  cat "/sys/class/input/${e##*/}/device/name" 2>/dev/null
+	printf '%s: ' "$e"
+	cat "/sys/class/input/${e##*/}/device/name" 2>/dev/null
 done
 ```
 
@@ -214,7 +214,7 @@ Install the `hwdb` rule:
 
 ```bash
 sudo install -Dm644 src/61-lenovo-thinkbook-media.hwdb \
-  /etc/udev/hwdb.d/61-lenovo-thinkbook-media.hwdb
+	/etc/udev/hwdb.d/61-lenovo-thinkbook-media.hwdb
 ```
 
 Apply the update:
@@ -238,8 +238,8 @@ List input devices:
 
 ```bash
 for e in /dev/input/event*; do
-  printf '%s: ' "$e"
-  cat "/sys/class/input/${e##*/}/device/name" 2>/dev/null
+	printf '%s: ' "$e"
+	cat "/sys/class/input/${e##*/}/device/name" 2>/dev/null
 done
 ```
 
