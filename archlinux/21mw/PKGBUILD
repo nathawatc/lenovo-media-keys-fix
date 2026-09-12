@@ -1,15 +1,16 @@
-# Maintainer: nathawat <nathawat[at]noreply[dot]codeberg[dot]org>
+# Maintainer: Scott <158021536+nathawatc@users.noreply.github.com>
+# shellcheck shell=bash disable=SC2034,SC2154,SC2164
 
 pkgname=21mw-media-keys-fix
 pkgver=1
 pkgrel=1
 pkgdesc="Fix media key events on Lenovo ThinkBook 16 G7 ARP (21MW)"
 arch=('any')
-url="https://codeberg.org/nathawat/thinkbook-media-keys-fix"
+url="https://github.com/nathawatc/lenovo-media-keys-fix"
 license=('CC0-1.0')
 depends=('systemd')
 install="$pkgname.install"
-source=("61-21mw-media.hwdb::${url}/raw/commit/869ebdaae25cfbdac5e46fc8ab90ff26dbf392c2/src/61-21mw-media.hwdb")
+source=("61-21mw-media.hwdb::${url}/raw/fee4953abbd6d9e49d53de02fc57f566a25e4ccc/src/61-21mw-media.hwdb")
 b2sums=('0d3667ab4e13a44a0bc871635faa0e693438d7eba9a64d93c09fe7353beb4c1af002ab682c16bae5517ecd42af875538aa7993b07310dd6381f203756ad23862')
 
 package() {
